@@ -8,13 +8,13 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.cities.R
 
-class Fragment2 : Fragment(), ProfileListAdapter.OnItemClickListener {
+class Fragment3 : Fragment(), ProfileListAdapter.OnItemClickListener {
     private lateinit var recyclerView: RecyclerView
 
     val cityl = ArrayList<city>()
     private lateinit var adapter:ProfileListAdapter
     //(city("Nahid", R.drawable.ic_launcher_background), city("Raju", R.drawable.ic_launcher_foreground))
-    val citynam= arrayListOf<String>("Mumbai","Delhi","Kolkata","Chennai","Hydrabad","Rajsthan","Bangalore","Nagaland","Pune","Punjab")
+    val citynam= arrayListOf<String>("Lahore","Karachi","Islamabad","Sialkot","Peshawar","Multan","Quetta","Faisalabad","Sukkur","Mingora")
     val cityimg=arrayListOf<Int>(R.drawable.image1,R.drawable.image2,R.drawable.image3,R.drawable.image4,R.drawable.image5,R.drawable.image6,R.drawable.image7,R.drawable.image8,R.drawable.image9,R.drawable.image10)
 
     val descStr ="Lorem ipsum dolor sit amet, consectetur adipiscing elit, " +
@@ -57,7 +57,7 @@ class Fragment2 : Fragment(), ProfileListAdapter.OnItemClickListener {
 
     fun loadData(){
         for (i in 0..1000){
-            cityl.add(city(citynam[i%10],cityimg[(i+4)%10],descStr,false))
+            cityl.add(city(citynam[i%10],cityimg[(i+8)%10],descStr,false))
         }
 
         adapter.setDataList((cityl))
