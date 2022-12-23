@@ -31,13 +31,13 @@ class Fragment3 : Fragment(), ProfileListAdapter.OnItemClickListener {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        var view = inflater.inflate(R.layout.fragment_2, container, false)
+        var view = inflater.inflate(R.layout.fragment_1, container, false)
         return view
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        recyclerView = view.findViewById<RecyclerView>(R.id.recycler_view2)
+        recyclerView = view.findViewById<RecyclerView>(R.id.recycler_view)
         recyclerView.layoutManager = LinearLayoutManager(activity)
 
         adapter = ProfileListAdapter(cityl, this)
