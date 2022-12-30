@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
         fab = findViewById(R.id.fab)
 
         fab.setOnClickListener { view ->
-            Snackbar.make(view, "Here's a Snackbar", Snackbar.LENGTH_LONG)
+            Snackbar.make(view, "Here's a Popup:Alert Dialog!", Snackbar.LENGTH_LONG)
                 .setAction("Action", null)
                 .show()
 
