@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/basicinfo"
+            android:layout_height="wrap_content"
+            android:text="There are many types of reporting apps,
+            which focus on different areas. For example,
+            some reporting applications let you simplify
+            the process of generating and managing regular reports in business,
+            such as sales reports, management reports, accounting reports,
+            monthly reports, etc. Other types may help you collecting
+            and analyze the information from digital marketing channels.
+            Or, some apps report performance in real-time. "
+
+            android:textSize="18sp"
+            android:textAlignment="center"/>
+
+    </ScrollView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name: "
+        android:layout_marginTop="10dp"
+        android:id="@+id/txt_input"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/design_default_color_primary"
+            android:text="Cancel"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:id="@+id/btn_cancel"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/design_default_color_primary"
+            android:text="Ok"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#fff"
+            android:layout_weight="1"
+            android:id="@+id/btn_ok"/>
+    </LinearLayout>
+</LinearLayout>
